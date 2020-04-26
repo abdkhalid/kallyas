@@ -1,0 +1,622 @@
+
+/* Global CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+body{
+	position: relative;
+}
+.btn-up{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background: #FB414E;
+	color: #FFF;
+	transition: 0.5s linear;
+}
+.btn-up:hover{
+	background: #FF0030;
+	color: #FFF;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+/* Banner Section CSS */
+
+header{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner1.png);
+	min-height: 600px;
+	background-size: cover;
+	background-position: center;
+}
+header .navbar{
+	padding-top: 24px;
+}
+header .navbar .nav-item{
+	margin: 0px 18px;
+}
+header .navbar .nav-item .nav-link{
+	color: #FFF;
+	transition: 0.5s linear;
+}
+header .navbar .nav-item .nav-link:hover{
+	color: #FFF;
+	border-bottom: 1px solid #FB414E;
+}
+header .navbar .nav-item.active .nav-link{
+	color: #FFF;
+	border-bottom: 1px solid #FB414E;
+}
+
+.hero-area{
+	color: #FFF;
+	text-align: center;
+}
+.hero-area h1{
+	font-weight: 700;
+	padding: 0 20%;
+	margin: 5% 0;
+}
+.hero-area p{
+	padding: 0 22%;
+	line-height: 1.7;
+	margin-bottom: 5%;
+}
+.hero-area .two-btn{
+	margin-bottom: 10%;
+	padding-bottom: 5%;
+}
+.hero-area .btn-cta{
+	color: #FFF;
+	background: #FB414E;
+	padding: 7px 50px;
+	border-radius: 0;
+	margin: 5px 10px;
+	transition: 0.5s linear;
+}
+.hero-area .btn-cta:hover{
+	background: #FF0030;
+}
+.hero-area .btn-ghost{
+	color: #FFF;
+	border: 1px solid #FB414E;
+	padding: 7px 50px;
+	border-radius: 0;
+	margin: 5px 10px;
+	transition: 0.5s linear;
+}
+.hero-area .btn-ghost:hover{
+	border: 1px solid #FF0030;
+	background: #FF0030;
+}
+
+/* Service Section CSS */
+
+.service{
+	margin-top: -5%;
+	overflow: hidden;
+}
+.service .box{
+	background: #202B30;
+	color: #FFF;
+	padding: 15%;
+	margin-bottom: 0%; 
+	transition: 0.5s linear; 
+	/* position: relative;
+	z-index: 1; */
+}
+.service .box:hover{
+	background: #FB414E;
+} 
+/* .service .box::after{
+	content: "";
+	position: absolute;
+	background: #FB414E;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s linear;
+	transform: scale(0);
+	transform-origin: top left;
+}
+.service .box:hover::after{
+	transform: scale(1);
+	transform-origin: bottom right;
+	} */
+	.service .box img{
+		margin-bottom: 7%;
+	}
+	.service .box h5{
+		font-weight: 700;
+	}
+	.service .box .white-line{
+		width: 60px;
+		height: 3px;
+		background: #FFF;
+		margin: 7% 0;
+	}
+	.service .box p{
+		margin-bottom: 0;
+		line-height: 1.7;
+		padding-left: 0;
+	}
+
+	/* Work Section CSS */
+
+	.work{
+		text-align: center;
+		padding: 5% 0;
+	}
+	.work h6{
+		font-weight: 700;
+		color: #FB414E;
+		margin-bottom: 3%;
+	}
+	.work h2{
+		font-weight: 700;
+		padding: 0 10%;
+	}
+	.work span{
+		color: #FB414E;
+	}
+	.work p{
+		padding: 0 18%;
+		margin: 3% 0;
+		line-height: 1.7;
+	}
+	.box img{
+		padding-top: 5%;
+		padding-bottom: 3%;
+	}
+	.box h3{
+		font-weight: 700;
+		padding: 3% 0;
+	}
+	.box p{
+		/* padding-bottom: 3%; */
+		padding: 0 7% 3% 7%;
+		line-height: 1.7;
+	}
+
+	/* About Section CSS */
+
+	.about{
+		background: #202B30;
+		color: #FFF;
+		padding: 5% 0;
+	}
+	.about h2{
+		font-weight: 700;
+		padding: 5% 0;
+		margin-right: 5%;
+	}
+	.about p{
+		margin-right: 10%;
+		line-height: 1.7;
+	}
+	.about .btn-ghost{
+		color: #FFF;
+		border: 1px solid #FFF;
+		padding: 7px 50px;
+		border-radius: 0;
+		margin: 5% 0;
+		transition: 0.5s linear;
+	}
+	.about .btn-ghost:hover{
+		border: 1px solid #FFF;
+		background: #FFF;
+		color: #202B30;
+	}
+	.about img{
+		margin: 1%;
+		width: 45%;
+	}
+
+	/* feature Section CSS */
+
+	.feature{
+		padding: 5% 0;
+	}
+	.feature .box{
+	}
+	.feature .box h5{
+		font-weight: 700;
+	}
+	.feature .box p{
+		line-height: 1.7;
+		padding-left: 0;
+	}
+	.feature .right{
+		padding: 0% 0;
+	}
+	.feature .right h2{
+		font-weight: 700;
+		margin-right: 20%;
+		margin-bottom: 5%;
+	}
+	.feature .right p{
+		line-height: 1.7;
+	}
+
+	/* Branding Section CSS */
+
+	.branding{
+		background: #202B30;
+		color: #FFF;
+		padding: 5% 0;
+	}
+	.branding .box{}
+	.branding .box img{}
+	.branding .box .brand-logo-1{
+		padding-top: 48px;
+	}
+	.branding .box .brand-logo-2{}
+	.branding .box .brand-logo-3{}
+	.branding .box .brand-logo-4{
+		padding-top: 40px;
+	}
+	.branding .right{
+		text-align: right;
+	}
+	.branding .right h2{
+		font-weight: 700;
+		margin-left: 10%;
+		margin-bottom: 5%;
+	}
+	.branding .right p{
+		line-height: 1.7;
+		margin-left: 15%;
+	}
+
+	/* Design Section CSS */
+
+	.design{
+		background: #F8F8F8;
+		padding: 5% 0 0 0;
+	}
+	.design h2{
+		font-weight: 700;
+		margin-bottom: 5%;
+	}
+	.design p{
+		line-height: 1.7;
+		padding-left: 0;
+	}
+	.design .box{
+	}
+	.design .box img{
+		margin-top: 8%;
+	}
+	.design .box h5{
+		font-weight: 700;
+		margin-bottom: 5%;
+	}
+	.design .box p{
+		line-height: 1.7;
+	}
+	.design .right{}
+	.design .right img{
+		margin-top: 10%;
+	}
+
+	/* Contact Section CSS */
+
+	.contact{
+		text-align: right;
+		padding: 5% 0;
+	}
+	.contact h2{
+		font-weight: 700;
+		padding-left: 40%;
+		margin-bottom: 5%;
+	}
+	.contact p{
+		line-height: 1.7;
+		padding-left: 5%;
+	}
+	.contact form{}
+	.contact form .form-row{
+		margin: 2% 0;
+	}
+	.contact form .form-control{
+		border-radius: 0;
+		border-color: #757575;
+		color: #757575;
+	}
+	.contact form .btn-submit{
+		background: #FB414E;
+		color: #FFF;
+		border-radius: 0;
+		transition: 0.5s linear;
+	}
+	.contact form .btn-submit:hover{
+		background: #FF0030;
+	}
+	.contact input{}
+	.contact select{}
+	.contact option{}
+	.contact textarea{}
+
+	/* Footer Section CSS */
+
+	footer{
+		background: #202B30;
+		color: #FFF;
+		text-align: center;
+		padding: 1% 0;
+	}
+	footer p{
+		font-size: 75%;
+		margin-bottom: 0;
+	}
+
+	/* Responsive CSS */
+
+	@media (min-width: 992px) and (max-width: 1199px){
+		header {
+			min-height: 550px;
+		}
+		.service .box {
+			padding: 8%;
+		}
+		.hero-area h1 {
+			padding: 0 18%;
+		}
+		.branding .box .brand-logo-3 {
+			padding-top: 35px;
+		}
+		.branding .box .brand-logo-4 {
+			padding-top: 65px;
+		}
+		.design .right img {
+			margin-top: 20%;
+		}
+	}
+	@media (min-width: 768px) and (max-width: 991px){
+		header {
+			min-height: 500px;
+		}
+		.hero-area h1 {
+			padding: 0 5%;
+		}
+		.hero-area p {
+			padding: 0 10%;
+		}
+		.about h2 {
+			padding: 0 0 5% 0;
+			font-size: 25px;
+		}
+		.about p {
+			margin-right: 5%;
+			font-size: 12px;
+		}
+		.about .btn-ghost {
+			margin: 0;
+			font-size: 14px;
+		}
+		.feature .right h2 {
+			margin-right: 10%;
+			font-size: 25px;
+		}
+		.feature .right {
+			padding: 20% 0;
+		}
+		.branding .box .brand-logo-1 {
+			padding-top: 30px;
+		}
+		.branding .box .brand-logo-3 {
+			padding-top: 20px;
+		}
+		.branding .box .brand-logo-4 {
+			padding-top: 55px;
+		}
+		.branding .right h2 {
+			margin-left: 0%;
+			font-size: 25px;
+		}
+		.branding .right p {
+			margin-left: 10%;
+			font-size: 13px;
+		}
+		.design .right img {
+			margin-top: 0%;
+		}
+		.contact h2 {
+			padding-left: 5%;
+		}
+		.contact p {
+			padding-left: 0%;
+			font-size: 13.5px;
+		}
+	}
+	@media (min-width: 576px) and (max-width: 767px){
+		header {
+			min-height: 450px;
+		}
+		.hero-area h1 {
+			padding: 0 0%;
+			font-size: 35px;
+		}
+		.hero-area p {
+			padding: 0 10%;
+		}
+		.service .box {
+			margin-bottom: 5%;
+			text-align: center;
+		}
+		.service .box .white-line {
+			margin: 7% auto;
+		}
+		.service .box p {
+			padding: 0 16%;
+		}
+		.work h2 {
+			padding: 0 0%;
+		}
+		.work p {
+			padding: 0 12%;
+		}
+		.about {
+			text-align: center;
+		}
+		.about h2 {
+			padding: 5% 10%;
+			margin-right: 0%;
+		}
+		.about p {
+			margin-right: 0%;
+		}
+		.feature {
+			text-align: center;
+		}
+		.feature .box p {
+			padding-right: 0;
+		}
+		.feature .right h2 {
+			margin-right: 0;
+			padding: 0 10%;
+			margin-top: 5%;
+		}
+		.branding .right {
+			text-align: center;
+			margin-top: 10%;
+		}
+		.branding .right h2 {
+			margin-left: 0;
+		}
+		.branding .right p {
+			margin-left: 0;
+		}
+		.design {
+			text-align: center;
+		}
+		.design h2 {
+			padding: 0 10%;
+		}
+		.design .box img {
+			margin-top: 0%;
+		}
+		.design p {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		.contact {
+			text-align: center;
+		}
+		.contact h2 {
+			padding-left: 0%;
+		}
+		.contact form {
+			margin-top: 5%;
+		}
+	}
+	@media (min-width: 320px) and (max-width: 575px){
+		.hero-area h1 {
+			padding: 0 0%;
+			font-size: 30px;
+		}
+		.hero-area p {
+			padding: 0 0%;
+			font-size: 13px;
+		}
+		header {
+			min-height: 500px;
+		}
+		.service {
+			margin-top: -10%;
+		}
+		.service .box {
+			margin-bottom: 5%;
+			text-align: center;
+		}
+		.service .box .white-line {
+			margin: 7% auto;
+		}
+		.service .box p {
+			padding-right: 0;
+		}
+		.work h2 {
+			padding: 0;
+		}
+		.work p {
+			padding: 0;
+		}
+		.about {
+			text-align: center;
+		}
+		.about h2 {
+			margin-right: 0;
+		}
+		.about p {
+			margin-right: 0;
+		}
+		.feature {
+			text-align: center;
+		}
+		.feature .box p {
+			padding-right: 0;
+		}
+		.feature .right h2 {
+			margin-right: 0;
+		}
+		.branding {
+			text-align: center;
+		}
+		.branding .box .brand-logo-1 {
+			padding-top: 30px;
+		}
+		.branding .box .brand-logo-2 {
+			padding-top: 30px;
+		}
+		.branding .box .brand-logo-3 {
+			padding-top: 30px;
+		}
+		.branding .box .brand-logo-4 {
+			padding-top: 30px;
+		}
+		.branding .right {
+			text-align: center;
+		}
+		.branding .right h2 {
+			margin-left: 0;
+			margin-top: 10%;
+		}
+		.branding .right p {
+			margin-left: 0;
+		}
+		.design {
+			text-align: center;
+		}
+		.design .box p {
+			padding-right: 0;
+		}
+		.contact {
+			text-align: center;
+		}
+		.contact h2 {
+			padding-left: 0;
+			font-size: 30px;
+		}
+		.contact p {
+			padding-left: 0;
+		}
+		.contact input {
+			font-size: 14px;
+		}
+		.contact select {
+			font-size: 14px;
+		}
+		footer p {
+			font-size: 70%;
+		}
+		.btn-up {
+			display: none;
+		}
+	}
